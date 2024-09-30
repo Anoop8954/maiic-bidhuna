@@ -1,0 +1,160 @@
+/* Slider Styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    /* height: 700px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 700px;
+    width: auto;
+    border-radius: 13px;
+}
+
+.slide {
+    min-width: 100%;
+    /* height: 700px; */
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 700px;
+    border-radius: 13px;
+    
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Make Slider Responsive */
+@media (max-width: 768px) {
+    .slider img {
+        width: 100%;
+    }
+}
+
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Adjust spacing for mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+/* Slider Styles
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Ensure the height doesn't change between transitions */
+    /* height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    /* Ensure that the image height is consistent */
+    /* display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    /* display: block; /* Prevents gaps from inline element issues */
+/*}
+/* .slide img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevents gaps from inline element issues */
