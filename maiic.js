@@ -38,9 +38,9 @@ function showSlides(n) {
 }
 
 // Auto-slide every 5 seconds
-setInterval(() => {
+await setInterval(() => {
     moveSlide(1);
-}, 5000);
+}, 3000);
 
 // Initialize the first slide
 showSlides(slideIndex);
